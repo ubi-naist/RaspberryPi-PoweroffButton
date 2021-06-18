@@ -1,0 +1,11 @@
+[Unit]
+Description=Poweroff Button
+
+[Service]
+Type=simple
+WorkingDirectory=/home/user_directory/scripts
+ExecStart=/usr/bin/python3 /home/user_directory/scripts/poweroffbutton.py
+
+[Install]
+WantedBy=multi-user.target
+
